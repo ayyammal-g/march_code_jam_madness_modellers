@@ -127,6 +127,10 @@ To further verify its performance, Random Forest was subjected to cross-validati
 
 A Dummy model was also used as a baseline comparison. Since it did not account for class imbalance, its predictions were skewed towards the majority class, resulting in an accuracy of only 54% and an F1 score of 37%. This underscored the superior performance of the Random Forest model.
 
+### Conclusion
 
+In conclusion, after evaluating multiple models, Random Forest and Gradient Boosting outperformed the other models. The Random Forest Model was quicker compared to Gradient Boosting model, making it the most suitable model for predicting the winner of matchups in NCAAM tournament. 
+
+The Variables Net Rating, BPI that highly correlated to Target Variable Winner during the EDA also took the top spots in Variable importance of the Random Forent Model.
 
 
