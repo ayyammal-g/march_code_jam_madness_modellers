@@ -96,4 +96,37 @@ C. Overall Team Performance & Experience
 
 ---
 
+#### Data Sets
+
+The DataSet is prepared from Espn and Kaggle based on the above plan and is compiled in the files:
+-  NCAA_mens_data - Feature Engineered Data
+      - 509 rows * 34 columns
+      - Data wrangling and aggregation done through Microsoft Excel
+-  raw_ncaa_mens_data - Raw data scrubbed from the websites
+
+The Data wrangling and aggreation were done through Excel Spreadsheet. 
+##### Exploratory Data Analysis Findings:
+
+
+- Out 64 Teams, the above 20 teams represent top performing teams based on Net Ratings
+- Duke Blue Devils is topping the list with highest Net Ratings across other teams in the top20 it played with
+- Houston Cougers and Auburn Tigers comes next to Duke Blue Devils
+- Missouri Tigers is the poorly performing team with negative net ratings with all the teams it played with
+- Alabama Crimson Tide team has inconsistent net ratings across teams.
+- BPI, Net Rating and Wins are positively correlated to the winner
+- Loss, Adjusted Defensive efficiency, Opponent Field Goal Percents are negatively correlated to the winner
+- The heatmap clearly shows weaker opponent teams with lower defensive efficiency and low field goal percents contribute to the win.
+
+**Model Training and Validation:**
+
+The dataset was first divided into training, validation, and test sets, with the "Winner" column serving as the target variable to differentiate between wins and losses. Given that the features were on different scales, feature scaling was applied to standardize the data.
+
+Subsequently, multiple models—Decision Tree, Random Forest, Logistic Regression, and Gradient Boosting—were trained and evaluated. A loop was used to iterate over various hyperparameters, optimizing each model based on accuracy. In addition, performance metrics such as F1 score, precision, and recall were considered, and class imbalance was handled using a class weight adjustment. The Random Forest model and Gradient Boosting model got tied as the top performer, achieving an accuracy of 68.6% on the validation and test data set. Logistic Regression at 59.8%, and Decision Tree at 53.9%. Random Forest also delivered the highest precision and the second-highest recall, resulting in the second-best F1 score.
+
+To further verify its performance, Random Forest was subjected to cross-validation, which confirmed its robustness by yielding an accuracy of 69% (with an F1 score of 52%), closely matching the 68% accuracy of the best-tuned model. When the optimal hyperparameters were applied to the test set, the results remained consistent at 68%.
+
+A Dummy model was also used as a baseline comparison. Since it did not account for class imbalance, its predictions were skewed towards the majority class, resulting in an accuracy of only 54% and an F1 score of 37%. This underscored the superior performance of the Random Forest model.
+
+
+
 
