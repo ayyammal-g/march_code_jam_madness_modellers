@@ -135,7 +135,7 @@ The Variables Net Rating, BPI that highly correlated to Target Variable Winner d
 
 ### How to Run:
 
-Download NCAAM_final.ipynb notebook and run all the cells.
+Download NCAAM_final_without_names.ipynb notebook and run all the cells.
 
 
 
