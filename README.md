@@ -133,4 +133,9 @@ In conclusion, after evaluating multiple models, Random Forest and Gradient Boos
 
 The Variables Net Rating, BPI that highly correlated to Target Variable Winner during the EDA also took the top spots in Variable importance of the Random Forent Model.
 
+### How to Run:
+
+Download NCAAM_final.ipynb notebook and run all the cells.
+
+
 
