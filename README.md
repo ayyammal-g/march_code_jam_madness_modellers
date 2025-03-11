@@ -18,38 +18,37 @@ After evaluating several models—including Decision Tree, Logistic Regression, 
 
 9) Features underwent selection and aggregation across two primary categories: ***Team Stats*** and ***General Info***. The Team Stats category is divided into three subcategories: (A) Efficiency & Shooting, (B) Game Dynamics & Possession, and (C) Overall Team Performance & Experience. The General Info category comprises contextual columns that do not directly reflect in-game performance but remain significant for modeling or identification. Below is an overall description of all features and the applied aggregation methods:
 
-***Team Stats***
-
+#### Team Stats
 ---
 A. Efficiency & Shooting Metrics
 
 ---
 
-**Adjusted Offensive Efficiency:**
+*Adjusted Offensive Efficiency:*
     Points scored per 100 possessions, adjusted for opponent strength. Higher values indicate a more efficient offense.
 
-**Adjusted Defensive Efficiency:**
+*Adjusted Defensive Efficiency:*
     Points allowed per 100 possessions, adjusted for opponent strength. Lower values indicate a stronger defense.
     
-**eFGPct (Effective Field Goal Percentage):** Adjusts field goal percentage to account for the extra value of three-point shots.
+*eFGPct (Effective Field Goal Percentage):* Adjusts field goal percentage to account for the extra value of three-point shots.
 
-**FTRate (Free Throw Rate):** Ratio of free throw attempts to field goal attempts, indicating how frequently the team gets to the line.
+*FTRate (Free Throw Rate):* Ratio of free throw attempts to field goal attempts, indicating how frequently the team gets to the line.
 
-**FG2Pct (2-Point Field Goal Percentage):** Success rate on two-point shots inside the arc.
+*FG2Pct (2-Point Field Goal Percentage):* Success rate on two-point shots inside the arc.
 
-**FG3Pct (3-Point Field Goal Percentage):** Success rate on shots taken from beyond the arc.
+*FG3Pct (3-Point Field Goal Percentage):* Success rate on shots taken from beyond the arc.
 
-**FTPct (Free Throw Percentage):** Conversion rate on free throws.
+*FTPct (Free Throw Percentage):* Conversion rate on free throws.
 
-**BlockPct (Block Percentage):** Percentage of opponent two-point shots blocked by the team.
+*BlockPct (Block Percentage):* Percentage of opponent two-point shots blocked by the team.
 
-**OppFG2Pct (Opponent 2-Point Field Goal Percentage):** Opponents’ success rate on shots inside the arc, reflecting the team’s ability to defend close-range attempts.
+*OppFG2Pct (Opponent 2-Point Field Goal Percentage):* Opponents’ success rate on shots inside the arc, reflecting the team’s ability to defend close-range attempts.
 
-**OppFG3Pct (Opponent 3-Point Field Goal Percentage):** Opponents’ success rate on shots from beyond the arc, reflecting the effectiveness of the perimeter defense.
+*OppFG3Pct (Opponent 3-Point Field Goal Percentage):* Opponents’ success rate on shots from beyond the arc, reflecting the effectiveness of the perimeter defense.
 
-**OppFTPct (Opponent Free Throw Percentage):** Conversion rate on opponents’ free throws.
+*OppFTPct (Opponent Free Throw Percentage):* Conversion rate on opponents’ free throws.
 
-**OppBlockPct (Opponent Block Percentage):** Percentage of the team’s own two-point attempts that are blocked by opponents.
+*OppBlockPct (Opponent Block Percentage):* Percentage of the team’s own two-point attempts that are blocked by opponents.
 
 ---
 
@@ -57,17 +56,17 @@ B. Game Dynamics & Possession Metrics
 
 ---
 
-**Adjusted Tempo:** Estimated number of possessions per 40 minutes, adjusted for opponent, indicating the pace of play.
+*Adjusted Tempo:* Estimated number of possessions per 40 minutes, adjusted for opponent, indicating the pace of play.
 
-**TOPct (Turnover Percentage):** Percentage of possessions that end in turnovers; lower values are preferable.
+*TOPct (Turnover Percentage):* Percentage of possessions that end in turnovers; lower values are preferable.
 
-**ORPct (Offensive Rebound Percentage):** Percentage of available offensive rebounds secured by the team.
+*ORPct (Offensive Rebound Percentage):* Percentage of available offensive rebounds secured by the team.
 
-**ARate (Assist Rate):** Percentage of made field goals that are assisted, reflecting team ball movement.
+*ARate (Assist Rate):* Percentage of made field goals that are assisted, reflecting team ball movement.
 
-**StlRate (Steal Rate):** Percentage of defensive possessions that result in a steal by the team.
+*StlRate (Steal Rate):* Percentage of defensive possessions that result in a steal by the team.
 
-**OppStlRate (Opponent Steal Rate):** Percentage of the team’s offensive possessions that end in a steal by the opponent.
+*OppStlRate (Opponent Steal Rate):* Percentage of the team’s offensive possessions that end in a steal by the opponent.
 
 ---
 
@@ -85,7 +84,7 @@ C. Overall Team Performance & Experience
 ---
 
 
-***General Info***
+#### General Info
 
 ---
 **Active Coaching Length:** Indicates the duration of the current coach’s tenure.
@@ -96,7 +95,7 @@ C. Overall Team Performance & Experience
 
 ---
 
-#### Data Sets
+### Data Sets
 
 The DataSet is prepared from Espn and Kaggle based on the above plan and is compiled in the files:
 -  NCAA_mens_data - Feature Engineered Data
@@ -105,11 +104,13 @@ The DataSet is prepared from Espn and Kaggle based on the above plan and is comp
 -  raw_ncaa_mens_data - Raw data scrubbed from the websites
 
 The Data wrangling and aggreation were done through Excel Spreadsheet. 
-##### Exploratory Data Analysis Findings:
+### Exploratory Data Analysis Findings:
 
-EDA done on Net Ratings
-<img width="459" alt="image" src="https://github.com/user-attachments/assets/531b86ef-ad25-4a14-a76e-450b6cda8392" />
+Exploratory Data Analysis helps to provide the key insights and data spread and distributions of the data visually. We did EDA on data spread across the teams, correlation heat maps and some insights on the net ratings.
 
+The Net Ratings difference between teams are calculated and we tried to visualize the matchups. Below some of the visualizations.
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/531b86ef-ad25-4a14-a76e-450b6cda8392" />
 
 - Out 64 Teams, the above 20 teams represent top performing teams based on Net Ratings
 - Duke Blue Devils is topping the list with highest Net Ratings across other teams in the top20 it played with
