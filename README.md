@@ -104,14 +104,21 @@ The DataSet is prepared from Espn and Kaggle based on the above plan and is comp
 -  raw_ncaa_mens_data - Raw data scrubbed from the websites
 
 The Data wrangling and aggreation were done through Excel Spreadsheet. 
-### Exploratory Data Analysis Findings:
+### Exploratory Data Analysis:
 
 Exploratory Data Analysis helps to provide the key insights and data spread and distributions of the data visually. We did EDA on data spread across the teams, correlation heat maps and some insights on the net ratings.
 
-The Net Ratings difference between teams are calculated and we tried to visualize the matchups. Below some of the visualizations.
+| Heat Map on All Imported Features | Heat Map after Feature Engineering |
+| --- | --- |
+|![image](https://github.com/user-attachments/assets/2f39d369-7ba7-445e-b1b7-9acd9590b0ec)|![image](https://github.com/user-attachments/assets/47d55853-a75a-4aaf-a05b-34131a058e29)
 
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/531b86ef-ad25-4a14-a76e-450b6cda8392" />
 
+
+| Top 20 Match up Net Ratings | Match up Data Spread among Teams |
+| --- | --- |
+| <img width="500" alt="image" src="https://github.com/user-attachments/assets/531b86ef-ad25-4a14-a76e-450b6cda8392" /> | <img width="500" alt="image" src="https://github.com/user-attachments/assets/511067b9-5362-4a6a-8266-d0a5403137d4" /> |
+
+#### Findings:
 - Out 64 Teams, the above 20 teams represent top performing teams based on Net Ratings
 - Duke Blue Devils is topping the list with highest Net Ratings across other teams in the top20 it played with
 - Houston Cougers and Auburn Tigers comes next to Duke Blue Devils
