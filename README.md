@@ -107,6 +107,9 @@ The DataSet is prepared from Espn and Kaggle based on the above plan and is comp
 The Data wrangling and aggreation were done through Excel Spreadsheet. 
 ##### Exploratory Data Analysis Findings:
 
+EDA done on Net Ratings
+<img width="459" alt="image" src="https://github.com/user-attachments/assets/531b86ef-ad25-4a14-a76e-450b6cda8392" />
+
 
 - Out 64 Teams, the above 20 teams represent top performing teams based on Net Ratings
 - Duke Blue Devils is topping the list with highest Net Ratings across other teams in the top20 it played with
