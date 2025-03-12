@@ -105,7 +105,7 @@ The Net Rating differences are calculated for each matched up team pair and the 
 
 | Top 20 Match up Net Ratings | Match up Data Spread among Teams |
 | --- | --- |
-| <img width="500" alt="image" src="https://github.com/user-attachments/assets/531b86ef-ad25-4a14-a76e-450b6cda8392" /> | <img width="500" alt="image" src="https://github.com/user-attachments/assets/511067b9-5362-4a6a-8266-d0a5403137d4" /> |
+| <img width="400" alt="image" src="https://github.com/user-attachments/assets/531b86ef-ad25-4a14-a76e-450b6cda8392" /> | <img width="400" alt="image" src="https://github.com/user-attachments/assets/5abade9b-447c-400b-b17c-4cb33751c3d6" />|
 
 #### Observations:
 - Out 64 Teams, the above 20 teams represent top performing teams based on Net Ratings
