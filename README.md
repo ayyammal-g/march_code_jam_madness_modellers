@@ -154,7 +154,7 @@ With the best model being Random Forest is chosen and matchups are randomized be
 
 ### Conclusion
 
-In conclusion, after evaluating multiple models, Random Forest and Gradient Boosting outperformed the other models. The Random Forest Model was quicker compared to Gradient Boosting model, making it the most suitable model for predicting the winner of matchups in NCAAM tournament. 
+In conclusion, after evaluating multiple models, Random Forest and Gradient Boosting outperformed the other models. The Random Forest Model was quicker compared to Gradient Boosting model, making it the most suitable model for predicting the winner of matchups in NCAAM tournament. With this model, the NCAA champship winner is predicted by randomized matchup and building the bracket.
 
 The Variables Net Rating, BPI that highly correlated to Target Variable Winner during the EDA also took the top spots in Variable importance of the Random Forent Model.
 
