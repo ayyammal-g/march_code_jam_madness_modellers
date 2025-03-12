@@ -106,27 +106,30 @@ The DataSet is prepared from Espn and Kaggle based on the above plan and is comp
 The Data wrangling and aggreation were done through Excel Spreadsheet. 
 ### Exploratory Data Analysis:
 
-Exploratory Data Analysis helps to provide the key insights and data spread and distributions of the data visually. We did EDA on data spread across the teams, correlation heat maps and some insights on the net ratings.
+Exploratory Data Analysis helps to provide the key insights and data spread and distributions of the data visually. EDA on data spread across the team match ups, correlation heat maps and some insights on the net ratings.
+
+The below Picture 1 shows the heat map with the imported dataset of matchups with Team1 and Team2 stats. The Picture 2 shows the heatjap after team1 and team2 stats are aggregated by taking difference of each of respective stats and are introduced as new features instead of just the team specific stats.
 
 | Heat Map on All Imported Features | Heat Map after Feature Engineering |
 | --- | --- |
 |![image](https://github.com/user-attachments/assets/2f39d369-7ba7-445e-b1b7-9acd9590b0ec)|![image](https://github.com/user-attachments/assets/47d55853-a75a-4aaf-a05b-34131a058e29)
 
-
+#### Observations:
+- The heatmap on the imported dataset clearly shows no feature is correlated strongly to the 
+- BPI, Net Rating and Wins are positively correlated to the winner
+- Loss, Adjusted Defensive efficiency, Opponent Field Goal Percents are negatively correlated to the winner
+- The heatmap clearly shows weaker opponent teams with lower defensive efficiency and low field goal percents contribute to the win.
 
 | Top 20 Match up Net Ratings | Match up Data Spread among Teams |
 | --- | --- |
 | <img width="500" alt="image" src="https://github.com/user-attachments/assets/531b86ef-ad25-4a14-a76e-450b6cda8392" /> | <img width="500" alt="image" src="https://github.com/user-attachments/assets/511067b9-5362-4a6a-8266-d0a5403137d4" /> |
 
-#### Findings:
+#### Observations:
 - Out 64 Teams, the above 20 teams represent top performing teams based on Net Ratings
 - Duke Blue Devils is topping the list with highest Net Ratings across other teams in the top20 it played with
 - Houston Cougers and Auburn Tigers comes next to Duke Blue Devils
 - Missouri Tigers is the poorly performing team with negative net ratings with all the teams it played with
 - Alabama Crimson Tide team has inconsistent net ratings across teams.
-- BPI, Net Rating and Wins are positively correlated to the winner
-- Loss, Adjusted Defensive efficiency, Opponent Field Goal Percents are negatively correlated to the winner
-- The heatmap clearly shows weaker opponent teams with lower defensive efficiency and low field goal percents contribute to the win.
 
 **Model Training and Validation:**
 
