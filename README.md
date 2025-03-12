@@ -108,17 +108,21 @@ The Data wrangling and aggreation were done through Excel Spreadsheet.
 
 Exploratory Data Analysis helps to provide the key insights and data spread and distributions of the data visually. EDA on data spread across the team match ups, correlation heat maps and some insights on the net ratings.
 
-The below Picture 1 shows the heat map with the imported dataset of matchups with Team1 and Team2 stats. The Picture 2 shows the heatjap after team1 and team2 stats are aggregated by taking difference of each of respective stats and are introduced as new features instead of just the team specific stats.
+In first picture below it shows the heat map with the imported dataset of matchups with Team1 and Team2 stats. The second picture shows the heatmap after team1 and team2 stats are aggregated by taking difference of each of respective stats and are introduced as new features instead of just the team specific stats.
 
 | Heat Map on All Imported Features | Heat Map after Feature Engineering |
 | --- | --- |
 |![image](https://github.com/user-attachments/assets/2f39d369-7ba7-445e-b1b7-9acd9590b0ec)|![image](https://github.com/user-attachments/assets/47d55853-a75a-4aaf-a05b-34131a058e29)
 
+<i> Note: Click the pictures to zoom in for detailed view </i>
+
 #### Observations:
-- The heatmap on the imported dataset clearly shows no feature is correlated strongly to the 
-- BPI, Net Rating and Wins are positively correlated to the winner
-- Loss, Adjusted Defensive efficiency, Opponent Field Goal Percents are negatively correlated to the winner
-- The heatmap clearly shows weaker opponent teams with lower defensive efficiency and low field goal percents contribute to the win.
+   - The heatmap on the imported dataset clearly shows no feature is correlated strongly to the 
+   - BPI, Net Rating and Wins are positively correlated to the winner
+   - Loss, Adjusted Defensive efficiency, Opponent Field Goal Percents are negatively correlated to the winner
+   - The heatmap clearly shows weaker opponent teams with lower defensive efficiency and low field goal percents contribute to the win.
+
+The Net Rating differences are calculated for each matched up team pair and the Teams 20 matched up pairs with high net ratings are plotted to see the team performances in the match ups. The first picture below shows the plot. The Next picture represents how many records per team are available in the historical data we pulled. There are some teams that got lot of match ups with different teams which would clearly provide lot of information about the team performance. There are some teams with very few matchups and hence have less records in the data set. Determining their performances would not be accurate as there is not much history.
 
 | Top 20 Match up Net Ratings | Match up Data Spread among Teams |
 | --- | --- |
