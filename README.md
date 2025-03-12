@@ -156,13 +156,17 @@ With the best model being Random Forest is chosen and matchups are randomized be
 
 ### Conclusion
 
-In conclusion, after evaluating multiple models, Random Forest and Gradient Boosting outperformed the other models. The Random Forest Model was quicker compared to Gradient Boosting model, making it the most suitable model for predicting the winner of matchups in NCAAM tournament. With this model, the NCAA champship winner is predicted by randomized matchup and building the bracket.
+In conclusion, after evaluating multiple models, Random Forest and Gradient Boosting outperformed the other models. The Random Forest Model was quicker compared to Gradient Boosting model, making it the most suitable model for predicting the winner of a matchup pair. This model is further extended to predict the NCAA Mens Basketball Winner for the 2025 season by building the bracket out of randomized matchup.
 
-The Variables Net Rating, BPI that highly correlated to Target Variable Winner during the EDA also took the top spots in Variable importance of the Random Forent Model.
+The Variables Net Rating, BPI that highly correlated to Target Variable Winner during the EDA,  also took the top spots in Variable importance of the Random Forent Model.
 
-### How to Run:
+Given this is the MVP Model, it comes with its own limitations such as missing some team matchups as there are no head-to-head matchup for some teams and also with varying number of matchups for each team.
 
-Download NCAAM_final_without_names.ipynb notebook and run all the cells.
+Future recommendation would be to add more enhanced features like near real time information,  player stats and past season match ups, so that the model can predict much more accurately.
+
+### Set Up Instructions
+Download NCAAM_final_without_names.ipynb notebook and run all the cells. 
+
 
 
 
