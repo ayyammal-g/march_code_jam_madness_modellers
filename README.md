@@ -122,7 +122,7 @@ In first picture below it shows the heat map with the imported dataset of matchu
    - Loss, Adjusted Defensive efficiency, Opponent Field Goal Percents are negatively correlated to the winner
    - The heatmap clearly shows weaker opponent teams with lower defensive efficiency and low field goal percents contribute to the win.
 
-The Net Rating differences are calculated for each matched up team pair and the Teams 20 matched up pairs with high net ratings are plotted to see the team performances in the match ups. The first picture below shows the plot. The Next picture represents how many records per team are available in the historical data we pulled. There are some teams that got lot of match ups with different teams which would clearly provide lot of information about the team performance. There are some teams with very few matchups and hence have less records in the data set. Determining their performances would not be accurate as there is not much history.
+The Net Rating differences are calculated for each matched up team pair and the Top 20 matched up pairs with high net ratings are plotted to see the team performances in the match ups. The first picture below shows the plot. The Next picture represents how many records per team are available in the historical data we pulled. There are some teams that got lot of match ups with different teams which would clearly provide lot of information about the team performance. There are some teams with very few matchups and hence have less records in the data set. Determining their performances would not be accurate as there is not much history.
 
 | Top 20 Match up Net Ratings | Match up Data Spread among Teams |
 | --- | --- |
@@ -133,7 +133,6 @@ The Net Rating differences are calculated for each matched up team pair and the 
 - Duke Blue Devils is topping the list with highest Net Ratings across other teams in the top20 it played with
 - Houston Cougers and Auburn Tigers comes next to Duke Blue Devils
 - Missouri Tigers is the poorly performing team with negative net ratings with all the teams it played with
-- Alabama Crimson Tide team has inconsistent net ratings across teams.
 
 **Model Training and Validation:**
 
@@ -144,6 +143,14 @@ Subsequently, multiple models—Decision Tree, Random Forest, Logistic Regressio
 To further verify its performance, Random Forest was subjected to cross-validation, which confirmed its robustness by yielding an accuracy of 69% (with an F1 score of 52%), closely matching the 68% accuracy of the best-tuned model. When the optimal hyperparameters were applied to the test set, the results remained consistent at 68%.
 
 A Dummy model was also used as a baseline comparison. Since it did not account for class imbalance, its predictions were skewed towards the majority class, resulting in an accuracy of only 54% and an F1 score of 37%. This underscored the superior performance of the Random Forest model.
+
+| Model Peformances | Feature Importance |
+| --- | --- |
+|<img width="500" alt="image" src="https://github.com/user-attachments/assets/5decc0e0-7e49-46af-9eca-7d7cb653afae" />|<img width="500" alt="image" src="https://github.com/user-attachments/assets/801adea7-826b-4bc6-9e17-64b8627b6bdd" />|
+
+### Bracket Prediction
+
+With the best model being Random Forest is chosen and matchups are randomized between the 64 teams and bracket is built based on the model prediction. With the winners of all the matchups that occured on the randomized bracket the NCAA championship winner is predicted.
 
 ### Conclusion
 
