@@ -77,9 +77,10 @@ After evaluating several models—including Decision Tree, Logistic Regression, 
 
 The DataSet is prepared from Espn and Kaggle based on the above plan and is compiled in the files:
 -  NCAA_mens_data - Feature Engineered Data
-      - 509 rows * 34 columns
+      - 509 rows representing possible matchups in the season   
+      - 34 columns representing Team stats provided above
       - Data wrangling and aggregation done through Microsoft Excel
--  raw_ncaa_mens_data - Raw data scrubbed from the websites
+-  raw_ncaa_mens_data - Raw data scrubbed from the websites with Team1 and Team2 statistics without any aggregation
 
 The Data wrangling and aggreation were done through Excel Spreadsheet. 
 ### Exploratory Data Analysis:
