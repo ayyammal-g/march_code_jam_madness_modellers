@@ -1,3 +1,5 @@
+
+## TripleTen March Code Jam: MLHoops March Madness ML Predictor 
 ### Introduction
 ---
 This is an ML initiative aimed at developing a model that forecasts the outcome of matchups in the NCAAM tournament. The project began by filtering a Kaggle dataset to include only the top 64 teams based on ESPN’s BPI and scraping ESPN for game scores and outcomes from the 2024–25 season. The target variable was defined by whether team_1 won or lost, and 26 features were created by computing the differences between the statistics of the two competing teams. The data was then split into training/validation and test sets, with a StandardScaler applied to maintain uniformity, and class imbalance was addressed using class weight adjustments.
